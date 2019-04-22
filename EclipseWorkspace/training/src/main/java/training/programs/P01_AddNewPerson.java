@@ -5,7 +5,6 @@ import java.text.SimpleDateFormat;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
-import org.hibernate.cfg.Configuration;
 
 import training.entity.Person;
 import training.utils.HibernateUtil;
@@ -13,21 +12,21 @@ import training.utils.HibernateUtil;
 public class P01_AddNewPerson {
 
 	public static void main(String[] args) throws Exception {
-		
+
 		SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy");
-		
+
 		Person p1 = new Person();
-		p1.setName("Shyam");
+		p1.setName("John Doe");
 		p1.setAge(46);
 		p1.setHeight(6.1);
 		p1.setBirthDate(sdf.parse("02-10-1973"));
-		
-		
+
 		SessionFactory factory = HibernateUtil.getSessionFactory();
-		// get a session object (represents a connection to DB, provides CRUD operations)
+		// get a session object (represents a connection to DB, provides CRUD
+		// operations)
 		// A.K.A Level-1 Cache
 		Session session = factory.openSession();
-		
+
 		// perform CRUD operations
 		// 1. begin transaction
 		Transaction tx = session.beginTransaction();
@@ -46,12 +45,3 @@ public class P01_AddNewPerson {
 		factory.close(); // in practice, should be singleton
 	}
 }
-
-
-
-
-
-
-
-
-

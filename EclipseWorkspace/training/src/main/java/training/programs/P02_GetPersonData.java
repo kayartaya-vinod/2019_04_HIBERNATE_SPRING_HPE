@@ -12,7 +12,7 @@ public class P02_GetPersonData {
 		
 		SessionFactory factory = HibernateUtil.getSessionFactory();
 		Session session = factory.openSession();
-		Person p1 = session.get(Person.class, 1);
+		Person p1 = session.load(Person.class, 1);
 		session.close();
 		factory.close();
 		
