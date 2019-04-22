@@ -4,23 +4,51 @@ Client: HPE, Bangalore
 
 Duration: 5 days
 
-From: 25th Jan 2019
-
-To: 31st Jan 2019
+From: 22nd April 2019
 
 
 <table>
 <tr>
     <td>
-        <a href="http://bit.ly/2D9pxjW" target="_blank">
-        <img src="https://github.com/kayartaya-vinod/2018_11_Unisys_TypeORM/raw/master/angular7.jpeg">
+        <a href="https://www.udemy.com/mongodb-fundamentals/?couponCode=VINODCO" target="_blank">
+        <img src="https://vinod.co/assets/images/udemy/mongodb-fundamentals.jpeg">
         </a>
+        <strong>MongoDB Fundamentals</strong>
     </td>
     <td>
-        <a href="https://www.udemy.com/mongodb-fundamentals/?couponCode=FIRST500" target="_blank">
-        <img src="https://github.com/kayartaya-vinod/2018_11_Unisys_TypeORM/raw/master/mongodb.jpeg">
+        <a href="https://www.udemy.com/learn-react-and-redux-by-examples/?couponCode=VINODCO" target="_blank">
+        <img src="https://vinod.co/assets/images/udemy/learn-react-and-redux-by-examples.jpeg">
         </a>
+        <strong>React and Redux</strong>
     </td>
+    <td>
+        <a href="https://www.udemy.com/build-awesome-web-apps-using-angular-7/?couponCode=VINODCO" target="_blank">
+        <img src="https://vinod.co/assets/images/udemy/build-awesome-web-apps-using-angular7.jpeg">
+        </a>
+        <strong>Angular 7</strong>
+    </td>
+
+</tr>
+<tr>
+    <td>
+        <a href="https://www.udemy.com/develop-restful-java-web-services-using-jax-rs-and-jersey/?couponCode=VINODCO" target="_blank">
+        <img src="https://vinod.co/assets/images/udemy/develop-restful-java-web-services-using-jaxrs-and-jersey.jpeg">
+        </a>
+        <strong>RESTful Java web services</strong>
+    </td>
+    <td>
+        <a href="https://www.udemy.com/angular-7-a-quick-start-guide/?couponCode=VINODCO" target="_blank">
+        <img src="https://vinod.co/assets/images/udemy/angular-7-quick-start.jpeg">
+        </a>
+        <strong>Angular 7 - a quick start guide</strong>
+    </td>
+    <td>
+        <a href="https://www.udemy.com/hibernate-orm-a-quick-start-guide/?couponCode=VINODCO" target="_blank">
+        <img src="https://vinod.co/assets/images/udemy/hibernate-orm-a-quick-start-guide.jpeg">
+        </a>
+        <strong>Hibernate - a quick start guide</strong>
+    </td>
+
 </tr>
 </table>
 
