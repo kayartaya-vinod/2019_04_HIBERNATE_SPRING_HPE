@@ -12,7 +12,9 @@ import javax.persistence.Table;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
+@ToString
 @Getter
 @Setter
 @NoArgsConstructor
@@ -28,6 +30,9 @@ public class Person {
 	private Double height;
 	@Column(name="dob")
 	private Date birthDate;
+	
+	
+	
 }
 
 

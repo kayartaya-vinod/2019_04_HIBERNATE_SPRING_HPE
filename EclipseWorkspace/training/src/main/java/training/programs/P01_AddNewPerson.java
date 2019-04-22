@@ -8,6 +8,7 @@ import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
 import training.entity.Person;
+import training.utils.HibernateUtil;
 
 public class P01_AddNewPerson {
 
@@ -22,13 +23,7 @@ public class P01_AddNewPerson {
 		p1.setBirthDate(sdf.parse("02-10-1973"));
 		
 		
-		// An empty configuration object
-		Configuration cfg = new Configuration();
-		// read from hibernate.cfg.xml file (in the build path)
-		cfg.configure();
-		// build the session factory (represents a DB)
-		// A.K.A Level-2 Cache
-		SessionFactory factory = cfg.buildSessionFactory();
+		SessionFactory factory = HibernateUtil.getSessionFactory();
 		// get a session object (represents a connection to DB, provides CRUD operations)
 		// A.K.A Level-1 Cache
 		Session session = factory.openSession();
