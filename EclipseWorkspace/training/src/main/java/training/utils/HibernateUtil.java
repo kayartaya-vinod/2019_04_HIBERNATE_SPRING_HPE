@@ -22,7 +22,7 @@ public final class HibernateUtil {
 			
 			// hibernate.cfg.xml:
 			// <mapping class="training.entity.Category" />
-			cfg.addAnnotatedClass(Category.class);
+			// cfg.addAnnotatedClass(Category.class);
 			
 			// build the session factory (represents a DB)
 			factory = cfg.buildSessionFactory();

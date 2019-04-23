@@ -7,6 +7,7 @@ import training.entity.Category;
 import training.entity.Product;
 import training.utils.HibernateUtil;
 
+// http://bit.ly/20190422
 public class P07_BidirectionalDemo {
 
 	public static void main(String[] args) {

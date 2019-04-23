@@ -11,14 +11,15 @@
 		<property name="hibernate.connection.username">sa</property>
 		<property name="hibernate.connection.password"></property>
 		<!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
-		<property name="show_sql">true</property>
-		<property name="format_sql">false</property>
+		<property name="show_sql">false</property>
+		<property name="format_sql">true</property>
 		
 		<property name="dialect">org.hibernate.dialect.H2Dialect</property>
 		
 		<mapping class="training.entity.Person" />
 		<mapping class="training.entity.Product" />
-		<!-- <mapping class="training.entity.Category" /> -->
+		<mapping class="training.entity.Category" />
+		<mapping class="training.entity.Supplier" />
 		
 	</session-factory>
 </hibernate-configuration>
