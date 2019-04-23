@@ -2,7 +2,7 @@ package training.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -19,6 +19,7 @@ import lombok.Setter;
 @Table(name = "products")
 public class Product {
 	@Id
+	@GeneratedValue(generator="increment")
 	@Column(name = "product_id")
 	private Integer productId;
 	@Column(name = "product_name")
@@ -35,7 +36,7 @@ public class Product {
 	private Integer reorderLevel;
 	private Integer discontinued;
 
-	@ManyToOne // (fetch=FetchType.LAZY)
+	@ManyToOne
 	@JoinColumn(name = "category_id")
 	private Category category;
 
