@@ -20,6 +20,12 @@
 		<mapping class="training.entity.Product" />
 		<mapping class="training.entity.Category" />
 		<mapping class="training.entity.Supplier" />
+		<mapping class="training.entity.Employee" />
+		<mapping class="training.entity.Customer" />
+		<mapping class="training.entity.Order" />
+		<mapping class="training.entity.LineItem" />
+		<mapping class="training.entity.Shipper" />
+		<mapping class="training.entity.Laptop" />
 		
 	</session-factory>
 </hibernate-configuration>
