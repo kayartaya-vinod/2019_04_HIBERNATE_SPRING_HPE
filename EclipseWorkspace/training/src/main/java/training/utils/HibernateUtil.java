@@ -3,8 +3,6 @@ package training.utils;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-import training.entity.Category;
-
 public final class HibernateUtil {
 	private HibernateUtil() {
 	}
