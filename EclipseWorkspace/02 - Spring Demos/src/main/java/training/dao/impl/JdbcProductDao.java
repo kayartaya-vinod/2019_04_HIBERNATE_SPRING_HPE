@@ -30,7 +30,7 @@ public class JdbcProductDao implements ProductDao {
 	private Connection connection;
 
 	// connection pool
-	@Autowired
+	@Autowired(required = false)
 	@Qualifier("ds")
 	private DataSource dataSource;
 

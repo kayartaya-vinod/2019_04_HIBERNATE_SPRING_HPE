@@ -5,14 +5,16 @@ import javax.sql.DataSource;
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.hibernate.SessionFactory;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.orm.hibernate5.HibernateTemplate;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 
 @Configuration
+@ComponentScan(basePackages = { "training.dao" })
 public class AppConfig6 {
-	
+
 	@Bean
 	public LocalSessionFactoryBean factory(DataSource ds) {
 		LocalSessionFactoryBean sf = new LocalSessionFactoryBean();
@@ -20,13 +22,13 @@ public class AppConfig6 {
 		sf.setConfigLocation(new ClassPathResource("hibernate.cfg.xml"));
 		return sf;
 	}
-	
+
 	@Bean
 	public HibernateTemplate ht(SessionFactory factory) {
 		return new HibernateTemplate(factory);
 	}
-	
-	@Bean(name="ds")
+
+	@Bean(name = "ds")
 	public DataSource ds() {
 		BasicDataSource bds = new BasicDataSource();
 		bds.setDriverClassName("org.h2.Driver");
@@ -39,6 +41,5 @@ public class AppConfig6 {
 		bds.setMinIdle(5);
 		return bds;
 	}
-	
 
 }

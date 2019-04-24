@@ -9,7 +9,7 @@ import training.entity.Product;
 public class P02_HibernateTemplateDemo {
 
 	public static void main(String[] args) {
-		
+
 		AnnotationConfigApplicationContext ctx;
 		ctx = new AnnotationConfigApplicationContext(AppConfig6.class);
 
@@ -19,15 +19,7 @@ public class P02_HibernateTemplateDemo {
 		System.out.println("Price    = $" + p1.getUnitPrice());
 		System.out.println("Category = " + p1.getCategory().getCategoryName());
 		System.out.println("Supplier = " + p1.getSupplier().getCompanyName());
-		
-		
+
 		ctx.close();
 	}
 }
-
-
-
-
-
-
-

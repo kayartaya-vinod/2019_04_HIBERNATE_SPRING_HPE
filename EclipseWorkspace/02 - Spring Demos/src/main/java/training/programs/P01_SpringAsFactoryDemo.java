@@ -2,7 +2,7 @@ package training.programs;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import training.cfg.AppConfig5;
+import training.cfg.AppConfig6;
 import training.dao.DaoException;
 import training.dao.ProductDao;
 
@@ -13,9 +13,9 @@ public class P01_SpringAsFactoryDemo {
 		AnnotationConfigApplicationContext ctx;
 
 		// an object representing spring container based on AppConfig1
-		ctx = new AnnotationConfigApplicationContext(AppConfig5.class);
+		ctx = new AnnotationConfigApplicationContext(AppConfig6.class);
 		
-		ProductDao dao = ctx.getBean(ProductDao.class);
+		ProductDao dao = ctx.getBean("htDao", ProductDao.class);
 		int pc = dao.count();
 		
 		System.out.println("There are " + pc + " products.");
