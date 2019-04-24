@@ -20,6 +20,7 @@ public class P02_HibernateTemplateDemo {
 		System.out.println("Category = " + p1.getCategory().getCategoryName());
 		System.out.println("Supplier = " + p1.getSupplier().getCompanyName());
 		
+		
 		ctx.close();
 	}
 }
