@@ -17,7 +17,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableAspectJAutoProxy
 @EnableTransactionManagement
 @Configuration
-@ComponentScan(basePackages = { "training.dao" })
+@ComponentScan(basePackages = { "training.dao", "training.web"})
 public class AppConfig {
 	
 	// this bean is equivalent of an Aspect object
