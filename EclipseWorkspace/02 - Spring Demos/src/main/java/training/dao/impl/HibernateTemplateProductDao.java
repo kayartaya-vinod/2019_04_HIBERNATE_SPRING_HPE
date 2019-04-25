@@ -34,6 +34,9 @@ public class HibernateTemplateProductDao implements ProductDao {
 
 	@Override
 	public void updateProduct(Product product) throws DaoException {
+		if (product.getUnitPrice() < 0) {
+			throw new DaoException("Price cannot be negative!");
+		}
 		template.merge(product);
 	}
 
@@ -57,6 +60,7 @@ public class HibernateTemplateProductDao implements ProductDao {
 		return list;
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public List<Product> getProductsByPriceRange(Double min, Double max) throws DaoException {
 		DetachedCriteria dc = DetachedCriteria.forClass(Product.class);
@@ -109,11 +113,3 @@ public class HibernateTemplateProductDao implements ProductDao {
 	}
 
 }
-
-
-
-
-
-
-
-

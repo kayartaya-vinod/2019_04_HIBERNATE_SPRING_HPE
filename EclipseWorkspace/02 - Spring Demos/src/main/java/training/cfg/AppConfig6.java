@@ -7,13 +7,24 @@ import org.hibernate.SessionFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.orm.hibernate5.HibernateTemplate;
+import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+@EnableAspectJAutoProxy
+@EnableTransactionManagement
 @Configuration
-@ComponentScan(basePackages = { "training.dao" })
+@ComponentScan(basePackages = { "training.dao", "training.aop", "training.service" })
 public class AppConfig6 {
+	
+	// this bean is equivalent of an Aspect object
+	@Bean
+	public HibernateTransactionManager txMgr(SessionFactory factory) {
+		return new HibernateTransactionManager(factory);
+	}
 
 	@Bean
 	public LocalSessionFactoryBean factory(DataSource ds) {
