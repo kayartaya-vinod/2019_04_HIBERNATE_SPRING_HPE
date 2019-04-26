@@ -1,4 +1,4 @@
-package training.entity;
+package com.hpe.springbootdemo;
 
 import java.util.ArrayList;
 import java.util.List;

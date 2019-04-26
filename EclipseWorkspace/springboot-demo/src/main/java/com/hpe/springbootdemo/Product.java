@@ -1,4 +1,4 @@
-package training.entity;
+package com.hpe.springbootdemo;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
