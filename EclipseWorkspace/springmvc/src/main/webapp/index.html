@@ -3,24 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <title>Spring MVC App</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
 </head>
 <body>
-	<div>
-		<h1>Spring MVC App</h1>
-		<hr />
+	<div class="container">
+		<h1 class="alert alert-info">Spring MVC App</h1>
+
 		<p>Developed by Vinod</p>
 				
 		<div>
 			<form action="./get-products-by-price" method="GET">
-				<div>
+				<div class="form-group">
 					<label>Min price: </label>
-					<input name="min_price" value="50.0">
+					<input class="form-control" name="min_price" value="50.0">
 				</div>
 				<div>
 					<label>Max price: </label>
-					<input name="max_price" value="150.0">
+					<input class="form-control" name="max_price" value="150.0">
 				</div>
-				<button>Get data</button>
+				<button class="btn btn-primary">Get data</button>
 			</form>
 		</div>
 	</div>
