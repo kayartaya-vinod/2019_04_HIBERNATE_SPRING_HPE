@@ -28,7 +28,7 @@
 				</tr>
 			</thead>
 			<tbody>
-				<c:forEach items="${products}" var="p">
+				<c:forEach items="${data}" var="p">
 					<tr>
 						<td>${p.productName}</td>
 						<td>${p.category.categoryName}</td>
@@ -42,8 +42,3 @@
 	</div>
 </body>
 </html>
-
-
-
-
-

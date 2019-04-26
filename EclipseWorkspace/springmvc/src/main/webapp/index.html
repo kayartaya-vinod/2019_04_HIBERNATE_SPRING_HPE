@@ -2,13 +2,27 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Hello, Spring MVC</title>
+<title>Spring MVC App</title>
 </head>
 <body>
-	<h1>Spring MVC Demo App</h1>
-	<hr />
-	<p>Developed by Vinod </p>
-	
-	<a href="./view-all-products">View all products</a>
+	<div>
+		<h1>Spring MVC App</h1>
+		<hr />
+		<p>Developed by Vinod</p>
+				
+		<div>
+			<form action="./get-products-by-price" method="GET">
+				<div>
+					<label>Min price: </label>
+					<input name="min_price" value="50.0">
+				</div>
+				<div>
+					<label>Max price: </label>
+					<input name="max_price" value="150.0">
+				</div>
+				<button>Get data</button>
+			</form>
+		</div>
+	</div>
 </body>
 </html>

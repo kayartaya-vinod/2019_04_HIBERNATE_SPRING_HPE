@@ -13,12 +13,22 @@ import org.springframework.orm.hibernate5.HibernateTemplate;
 import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @EnableAspectJAutoProxy
 @EnableTransactionManagement
 @Configuration
-@ComponentScan(basePackages = { "training.dao", "training.web"})
+@ComponentScan(basePackages = { "training.dao", "training.web" })
 public class AppConfig {
+	
+	// view resolver bean config
+	@Bean
+	public InternalResourceViewResolver viewResolver() {
+		InternalResourceViewResolver vr = new InternalResourceViewResolver();
+		vr.setPrefix("/WEB-INF/pages/");
+		vr.setSuffix(".jsp");
+		return vr;
+	}
 	
 	// this bean is equivalent of an Aspect object
 	@Bean
