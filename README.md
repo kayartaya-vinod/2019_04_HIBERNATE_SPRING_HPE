@@ -7,6 +7,7 @@ Duration: 5 days
 From: 22nd April 2019
 
 
+## Check out my top rated courses on Udemy
 
 <table>
 <tr>
